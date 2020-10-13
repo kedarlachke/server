@@ -1,0 +1,19 @@
+{
+  "homepage":"http://kedarlachke.github.io/deploy_project",
+  "name": "quick-node-server",
+  "version": "1.0.0",
+  "description": "serves static files",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "scripts":{
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
+    "start":"node server"
+  },
+  "keywords": [
+    "node server",
+    "express server"
+  ]
+}
